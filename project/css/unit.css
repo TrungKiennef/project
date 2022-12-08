@@ -1,0 +1,103 @@
+.container {}
+
+.conversion-length {}
+
+.title-table {
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.content {}
+
+
+.convert-tab {
+    width: 700px;
+    height: 25rem;
+    margin: 3rem 27%;
+    background: #71717171;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #000000b0;
+
+}
+
+input {
+    width: 40%;
+    padding-left: 3px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #00000070;
+    border-radius: 5px;
+    outline: 0;
+}
+
+#input {
+    margin-left: 45px;
+
+}
+select{
+    border: 1px solid #00000070;
+    border-radius: 5px;
+    outline: 0;
+}
+
+#result {
+    margin-right: 45px;
+}
+.input-style, .result-style{
+    width: 40%;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 45px;
+}
+span{
+ font-size: 25px;
+}
+#input-resul{
+    margin-top: 75px;
+}
+.note{
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 760px) {
+    .convert-tab{
+        width: 300px;
+        height: 15rem;
+        margin: 1rem 3rem;
+    }
+    input{
+        height: 30px;
+    }
+    .title-table{
+        font-size: 15px;
+    }
+    .input-style, .result-style{
+        height: 25px;
+        font-size: 17px;
+    }
+    #input, .input-style{
+        margin-left: 5px;
+    }
+    #result{
+        margin-right: 5px;
+    }
+    .result-style{
+        margin-left: 45px;
+    }
+
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .convert-tab{
+        margin: 3rem 3rem;
+        height: 20rem;
+    }
+
+}
