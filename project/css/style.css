@@ -1,0 +1,269 @@
+/*Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* Css element */
+body {}
+
+#main {}
+
+/*Css header*/
+.header {
+    height: 46px;
+    background-color: #717171;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow:  1px 2px 2px 5px #00000047;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.brand {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: inherit;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 25%;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+
+}
+
+.nav .subnav{
+    background-color: #717171;
+    list-style-type: none;
+    margin-top: 13px;
+    box-shadow: 0px 0px 7px 1px #717171;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 33px;
+    min-width: 168px;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav li {
+    position: relative;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Font Awesome 5 Free';
+    letter-spacing: 2px;
+}
+
+.nav li a {
+    text-decoration: none;
+    padding: 0px 10px;
+    line-height: 46px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav > li:hover > a, 
+.nav .subnav li:hover a {
+    color:#000;
+    background-color:#ccc;
+    font-family: 'Font Awesome 5 Free';
+}
+
+
+
+.header .btn {
+    display: none;
+    cursor: pointer;
+}
+
+/* Css banner */
+.slider {}
+
+.slider .banner {
+    width: 100%;
+}
+
+/* Css content */
+.container {
+    text-align: justify;
+}
+
+/* .content-1{
+    display: none;
+} */
+.content-item {
+    line-height: 40px;  
+    background-color: #e1e0e03d;
+    box-shadow: 0px 0px 7px 1px #717171;
+    border-radius: 17px;
+    padding: 5vh 5vh;
+    margin: 3rem 15%;
+    width: 70%;
+}
+
+.content-item ul {
+    padding-left: revert;
+}
+
+.title-h2 {
+    line-height: 21px;
+
+}
+
+.content-p {
+    font-weight: 200;
+    padding-top: 1rem;
+}
+
+.read-more-text {
+    display: none;
+}
+
+.read-more-btn {
+    color: #0984e3;
+    cursor: pointer;
+}
+
+.read-more-text--show {
+    display: inline;
+}
+
+/* Css footer */
+.footer {
+    width: 100%;
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: small;
+    background-color: #717171;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.map {
+    display: none;
+}
+
+/*Media Screen*/
+@media (max-width: 1024px) {
+    .header .btn {
+        display: block;
+    }
+
+    .header .menu {
+        display: flex;
+        position: fixed;
+        background-color: rgb(61, 149, 190);
+        flex-direction: column;
+        width: 300px;
+        height: 101vh;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        right: -100%;
+        transition: 0.4s ease;
+        transform: right;
+        width: 200px;
+    }
+
+    .header .menu.active {
+        right: 0;
+    }
+
+    .menu .btn {
+        font-size: 25px;
+        width: 24%;
+    }
+
+    .menu a {
+        text-align: center;
+        padding: 15%;
+    }
+
+    .menu a:hover {
+        color: #000;
+        background-color: #48bbb5;
+    }
+
+    .menu-icon {
+        padding: 15px;
+    }
+
+    .btn:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .close-icon {
+        padding: 11px 16px
+    }
+    .fa-caret-down{
+        display: none;
+    }
+    .nav li:hover .subnav {
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+}
+
+@media (max-width: 760px) {
+    .content-item {
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-align: start;
+        padding: 20px;
+    }
+    .nav li a {
+        line-height: 8rem;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .nav li a {
+        line-height: 10rem;
+    }   
+    .content-item{
+        line-height: 30px;
+    }
+}
